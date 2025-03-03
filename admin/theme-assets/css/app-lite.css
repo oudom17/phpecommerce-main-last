@@ -1,0 +1,50 @@
+@import url('bootstrap-extended.css');
+@import url('colors.css');
+@import url('components-lite.css');
+
+.app-content {
+    min-height: calc(100vh - 50px);
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    padding: 2.2rem;
+    min-height: calc(100vh - 4rem);
+    background-color: #F4F5FA;
+}
+
+.content-wrapper-before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right, #FF9149, #FF4961);
+}
+
+.content-header {
+    position: relative;
+    padding: 1rem 0;
+    z-index: 1;
+}
+
+.content-header-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.content-body {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    min-height: calc(100% - 32px);
+    padding: 0;
+    transition: 300ms ease all;
+    backface-visibility: hidden;
+}

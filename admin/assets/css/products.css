@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.add-new {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.edit-btn, .delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    color: #ffa000;
+}
+
+.delete-btn {
+    color: #f44336;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+} 
